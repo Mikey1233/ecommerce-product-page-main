@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>Frontend Mentor | E-commerce product page</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+</head>
+<body>
+ <header>
+    <nav>
+      <span class="wow"><i class="bi bi-list" id="menu"></i></span>
+      <div class="logo"><img src="images/logo.svg" class="figo"/></div>
+      <ul class="ul">
+        <span class="xy"><i class="bi bi-x-lg"></i></span>
+         <li> Collections</li>
+         <li> Men</li>
+         <li> Women</li>
+         <li> About</li>
+         <li> Contact</li>
+      </ul>
+    </nav>
+    <div>
+      <div >
+        <span class="cart-num">0</span>
+        <img src="images/icon-cart.svg" class="svg">
+        <img src="images/image-avatar.png" alt="profile-pic" class="user-pic" /></div>
+    </div>
+ </header>
+  <hr>
+  <div class="container">
+        <div class="col-1">
+                   <div class="main">        
+                   </div>
+                   <div class="sub-shoe">
+                     <span class="sub1"> </span>
+                     <span class="sub2"></span>
+                     <span class="sub3"></span>
+                     <span class="sub4"></span>
+                   </div>
+        </div>
+          <div class="col-2">
+               <h5> Sneaker Company</h5>
+               <h1>Fall Limited Edition Sneakers</h1>
+              <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+               durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+             <div class="amount">
+                <span class="price">$125.00</span>
+                <span class="discount">50%</span><br>
+                <span class="sub-price"><del>$250.00</del></span>
+             </div>
+             <div class="cart-control">
+                   <button type="button" class="p">+</button>
+                   <span class="num">0</span>
+                   <button type="button"  class="m">-</button>
+                   <button type="button" class="add"> <i class="fa-sharp fa-solid fa-cart-shopping fa-lg" style="color: #f3efed;"></i>Add to cart</button>
+             </div>
+          </div>        
+  </div>
+  <div class="move-box">
+    <div class="alert-box">                 
+          <span class="boy"><i class="bi bi-x" id="cross"></i></span>
+           <span class="num2">0</span><span id="short-text">Item(s) Added To cart</span>
+          <div class="del"> Click to delete all  </div>
+          <div><i class="bi bi-trash3" id="trash"></i></div>      
+  </div>
+  </div>
+  <div class="cart-box">
+      <div><h4>Cart</h4></div><br>
+      <hr class="line">
+      <div class="loo">
+       <div> <img src="images/image-product-1-thumbnail.jpg" class="cart-image"></div>
+       <div> <span>Fall Limited Edition Sneakers</span>
+        <div><span>$125</span> * <span class="num3">0</span> <span class="result"><b>0</b></span></div>
+       </div>
+       <div> <i class="bi bi-trash-fill" id="trashBox"></i></div>
+      </div>
+      <div class="check">checkOut</div>
+  </div>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="indx.js"></script>
+</body>
+</html>

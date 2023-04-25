@@ -1,0 +1,450 @@
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Kumbh Sans', sans-serif;
+}
+body {
+      width: 100%;
+      height: fit-content;
+      transition: all 0.4s;
+      margin-bottom: 20px;
+      
+}
+body.active {
+  background-color: black;
+  color: rgb(179, 171, 171);
+}
+body.act {
+  overflow: hidden;
+}
+#menu {
+  font-size: 2em;
+  display: none;
+}
+.wow  ,.xy{
+  display: none;
+  cursor: pointer;
+}
+.logo {
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: white;
+  padding: 10px;
+  border: 20px;
+}
+header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: fit-content;
+      padding: 2em 3em 10px 3em;
+      overflow-x: hidden;
+}
+nav {
+    display: flex;
+    gap: 3em;
+    align-items: center;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+    align-items: center;
+}
+.x {
+  display: none;
+}
+li {
+    transition: all 0.4s;
+    padding: 3px;
+}
+ul li:hover {
+    color: hsl(30, 75%, 58%);
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.user-pic {
+    width: 3em;
+    border: 2px solid salmon;
+    border-radius: 50%;
+    cursor: pointer;
+}
+hr {
+    margin:0 50px;
+    border-radius: 10px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3em 4em;
+    
+    height: 120vh;
+    gap: 1em;
+}
+.col-1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 500px;
+    gap: 15px;
+}
+.main {
+  height: 430px;
+  background: url(images/image-product-1.jpg);
+  background-position:top 10px, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*transition: all 0.3s;*/
+  border-radius: 10px;
+}
+.sub-shoe {
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.sub1 {
+    background: url(images/image-product-1.jpg);
+    cursor: pointer;
+    background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover; 
+   border-radius: 10px;
+   transition: 0.3s;
+}
+     .sub2 {
+    background: url(images/image-product-2.jpg);
+    cursor: pointer;
+    background-position:center;
+   background-repeat: no-repeat;
+   background-size: cover; 
+   border-radius: 10px;
+   transition: 0.3s;
+   }
+   .sub3 {
+    background: url(images/image-product-3.jpg);
+    cursor: pointer;
+    background-position:center;
+   background-repeat: no-repeat;
+   background-size: cover; 
+   border-radius: 10px;
+   transition: 0.3s;
+   }
+   .sub4 {
+    background: url(images/image-product-4.jpg);
+    cursor: pointer;
+    background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover; 
+   border-radius: 10px;
+   transition: 0.3s;
+   }
+.sub1:hover,.sub2:hover,.sub3:hover,.sub4:hover {
+    opacity: 0.5;
+    border: 2px solid hsl(26, 100%, 55%);
+}
+
+   .col-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+   }
+   .col-2 h5 {
+    color: hsl(26, 100%, 55%);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+   }
+   .col-2 h1,p {
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+   }
+   .amount {
+    margin-bottom: 35px;
+   }
+   .price {
+    font-weight: bold;
+    font-size: 1.7em;
+    margin: 10px;
+   }
+   .discount {
+     color: hsl(26, 100%, 55%);
+     font-weight: bold;
+     background:hsl(27, 52%, 81%) ;
+     padding: 3px;
+     border-radius: 4px;
+   }
+   .sub-price {
+    color: hsl(0, 5%, 25%);
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+    left: 10px;
+   }
+   .cart-control {
+    display: flex;
+    gap: 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+   }
+   .p ,.m ,.num {
+     background:hsl(27, 52%, 81%) ;
+     flex: auto;
+     cursor: pointer;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: hsl(26, 100%, 55%);
+    font-weight: bold;
+    border: 0;
+   }
+   .add {
+    background: hsl(26, 100%, 55%);
+    border: 0;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 25px;
+    cursor: pointer;
+    white-space: nowrap;
+   }
+   .add:hover {
+    background:hsl(30, 75%, 58%) ;
+   }
+   .svg {
+    margin-right: 40px;
+    position: relative;
+    bottom: 10px;
+    cursor: pointer;
+   }
+   .cart-num {
+    border-radius: 30px;
+    background-color:  hsl(26, 100%, 55%) ;
+    padding: 3px;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    left: 30px;
+    top: -23px;
+    z-index: 100;
+    visibility: hidden;
+    cursor: pointer;
+   }
+   .cart-num.active {
+    visibility: visible;
+   }
+   .alert-box {
+    position: absolute;
+    width: 250px;
+    top: 50%;
+    background: white;
+    border: 1px solid hsl(26, 100%, 55%);
+    height: 200px;
+    text-align: center;
+    display: grid;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    
+    box-shadow: 0 0 7px black;
+    border-radius: 10px;
+    animation-name: animatemodal; 
+    animation-duration: .4s;
+          
+   }
+   @keyframes animatemodal {
+    from {
+        left :-500px;
+        opacity: 0;
+    }
+    to {
+        left: 50%;
+        opacity: 1;
+    }
+   }
+   
+   .del {
+    margin-top: 20px;
+   }
+   .num2 {
+    width: fit-content;
+    background: hsl(30, 75%, 58%);
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 10px;
+    left: 45%;
+   }
+   #cross {
+    color: white;
+    
+   }
+   .boy {
+    background-color: hsl(30, 75%, 58%);
+    width: 20px;
+    
+    position: relative;
+    top: 0%;
+    right: 0%;
+    border-radius: 10px 0 5px 0;
+   }
+  .move-box {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.5);
+  }
+  #trash {
+    cursor: pointer;
+  }
+  .cart-box {
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(249, 242, 242);
+    box-shadow: 0 0 10px black;
+    width: fit-content;
+    height: fit-content;
+    top: 15%;
+    right: 10%;
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+  }
+  .cart-box.active {
+    display: block;
+  }
+  .line {
+    margin: 0 ;
+  }
+  .loo {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .cart-image {
+    width: 3em;
+    border-radius: 5px;
+    margin: 14px;
+  }
+  .result {
+    margin-left: 5px;
+  }
+  .num3 {
+  font-weight: bold;
+  background-color: hsl(30, 75%, 58%);
+  padding: 3px;
+  margin: 3px;
+  border-radius: 10px;
+  }
+  #trashBox {
+    font-size: 1.5em;
+    color: hsl(26, 100%, 55%);
+  }
+  .check {
+    text-align: center;
+    background-color: hsl(26, 100%, 55%);
+    font-weight: 500;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 1.5em;
+    padding: 10px 20px;
+  }
+  .check:hover {
+   background-color: hsl(30, 75%, 58%);
+  }
+  @media screen  and (max-width:700px){
+    body {
+      padding: 1em 0.5em;
+    }
+    .logo {
+      width: fit-content;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: none;
+      grid-template-rows: 1fr 1fr;
+      width: 100%;
+      gap: 10px;
+      padding: 10px;
+      padding-left: 0;
+  }
+  #menu , .wow{
+    display: block;
+  }
+   header {
+    padding: 10px;
+   }
+   hr {
+    margin: 10px 30px;
+   }
+   .col-1 {
+    height: fit-content;
+    grid-template-rows: 1fr 100px;
+   }
+   .xy {
+    display: block;
+    margin-bottom: 3em;
+   }
+   .main{
+    height: 30vh;
+    padding: 0;
+   }
+   .sub-shoe{
+    height: 90px;
+    gap: 10px;
+   }
+   .col-2 {
+      padding: 0;
+   }
+  ul {
+    flex-direction: column;
+    list-style-type: none;
+    gap: 1em;
+    font-weight: bold;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    z-index: 100;
+    height: 100%;
+    width: 70vw;
+    color: black;
+    background-color: white;
+    text-align: left;
+    align-items: flex-start;
+    padding: 2em;
+   transition: all 0.4s;
+  }
+  ul.active {
+    left: 0;
+  }
+  .sub-shoe{
+    height: 100px;
+  }
+  
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: fit-content;
+   }
+   .svg {
+    margin-right: 5px;
+   }
+   .cart-box{
+    right: 5%;
+   }
+   nav {
+    gap: 10px;
+   }
+   .cart-control {
+    gap: 17px;
+   }
+}
